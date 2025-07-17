@@ -1,0 +1,64 @@
+1. Bahasa Pemrograman
+
+PHP 8.3.6
+Digunakan sebagai bahasa server-side untuk menangani proses backend dan pengolahan data.
+
+HTML5
+Untuk struktur dasar halaman web.
+
+CSS3
+Digunakan untuk styling halaman agar tampilan lebih menarik.
+
+JavaScript (Vanilla JS)
+Untuk menambahkan interaktivitas seperti konfirmasi hapus data, pop-up, atau validasi sederhana.
+
+2. Framework dan Library
+
+Bootstrap 5.3
+Digunakan untuk membangun tampilan UI yang responsif dan modern dengan komponen siap pakai (form, button, card, dll).
+
+3. Database
+
+MySQL 8 (XAMPP 8.0.30)
+Digunakan untuk menyimpan data mahasiswa, user login, dan file path foto. Diakses melalui PHP mysqli.
+
+4. Tools & Software Pendukung
+
+XAMPP 8.0.30
+Server lokal untuk menjalankan Apache, MySQL, dan PHP dalam satu paket.
+
+VS Code / Neovim + LazyVim
+Editor teks yang digunakan untuk mengembangkan kode.
+
+phpMyAdmin
+GUI berbasis web untuk mengelola database MySQL.
+
+5. Ekstensi & Fitur Tambahan
+
+Export ke PDF
+Menggunakan library PHP seperti dompdf atau manual HTML → Print to PDF.
+
+Export ke Excel
+Bisa menggunakan:
+
+PHP header("Content-type: application/vnd.ms-excel") (manual)
+
+Atau PHPSpreadsheet (jika Composer digunakan)
+
+
+6. OS & Lingkungan Pengembangan
+Ubuntu Linux (Versi 24.04)
+Sistem operasi utama dalam pengembangan dan testing aplikasi.
+
+Web Browser (Chrome / Firefox)
+Untuk testing dan melihat UI/UX.
+
+7. Kontrol Versi (opsional)
+Git
+Untuk version control dan kolaborasi jika dikerjakan tim.
+
+
+
+
+
+

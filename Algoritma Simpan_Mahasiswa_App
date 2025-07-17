@@ -1,0 +1,74 @@
+1. Login Proses
+
+Mulai
+↓
+User akses login.php
+↓
+Input username & password
+↓
+Cek di tabel users
+↓
+Jika cocok → Set session & redirect ke dashboard.php
+Jika tidak cocok → Tampilkan error
+
+
+2. Dashboard Akses
+Cek session login
+↓
+Jika tidak login → redirect ke login.php
+↓
+Tampilkan dashboard dan menu navigasi
+
+
+3. Menampilkan Data Mahasiswa (index.php)
+Query semua data dari tabel mahasiswa
+↓
+Tampilkan dalam bentuk tabel dengan opsi Edit & Hapus
+↓
+Sediakan form pencarian nama mahasiswa
+↓
+Jika ada keyword → filter data
+↓
+Tampilkan hasil
+
+
+4. Tambah Data Mahasiswa (form_input.php)
+User isi form: nama, NIM, prodi, tahun masuk, HP, alamat
+↓
+Klik tombol Simpan
+↓
+Validasi data
+↓
+Simpan ke database
+↓
+Redirect ke index.php dengan notifikasi sukses
+
+
+5. Edit & Hapus Data
+→ Edit: ambil ID → tampilkan data di form → simpan perubahan
+→ Hapus: ambil ID → konfirmasi → hapus dari database
+
+
+6. Export Excel (export_excel.php)
+Query seluruh data mahasiswa
+↓
+Buat file .xlsx menggunakan header manual atau PhpSpreadsheet
+↓
+Generate file → kirim ke browser untuk diunduh
+
+
+7.8. Export PDF (export_pdf.php)
+Query seluruh data mahasiswa
+↓
+Generate HTML tabel
+↓
+Convert ke PDF pakai dompdf
+↓
+Download file
+
+
+
+
+
+
+

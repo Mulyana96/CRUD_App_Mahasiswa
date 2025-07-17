@@ -1,0 +1,33 @@
+mahasiswa_app/
+│
+├── assets/
+│   └── images/
+│       ├── bg.jpg             ← Background halaman login & dashboard
+│       └── logo.png           ← Logo aplikasi
+│
+├── bootstrap/
+│   └── css/
+│       └── bootstrap.min.css
+│   └── js/
+│       └── bootstrap.bundle.min.js
+│
+├── uploads/
+│   └── [foto_mahasiswa.jpg]   ← Folder penyimpanan foto mahasiswa
+│
+├── config.php                 ← Koneksi ke database
+├── index.php                  ← Halaman utama (menampilkan data mahasiswa)
+├── login.php                  ← Halaman login
+├── logout.php                 ← Proses logout
+├── dashboard.php              ← Halaman dashboard setelah login
+├── form_input.php            ← Form tambah data mahasiswa
+├── edit.php                   ← Form edit data mahasiswa
+├── hapus.php                  ← Proses hapus data
+├── upload_foto.php            ← Upload foto mahasiswa
+├── export_excel.php           ← Ekspor data ke Excel (.xlsx)
+├── export_pdf.php             ← Ekspor data ke PDF
+├── tentang.php                ← Halaman tentang aplikasi
+│
+├── navbar.php                 ← Navbar aplikasi (include)
+├── footer.php                 ← Footer aplikasi (include)
+└── .htaccess                  ← (opsional) pengaturan URL
+

@@ -1,0 +1,70 @@
+1. Buat database
+
+CREATE DATABASE IF NOT EXISTS db_mahasiswa;
+USE db_mahasiswa;
+
+2. Tabel users (login/logout)
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,  -- hashed password (bcrypt/sha256)
+  nama_lengkap VARCHAR(100),
+  role ENUM('admin', 'user') DEFAULT 'user',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+3. Tabel mahasiswa
+
+CREATE TABLE IF NOT EXISTS mahasiswa (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  no INT NOT NULL,
+  nama_mahasiswa VARCHAR(100) NOT NULL,
+  nim VARCHAR(30) NOT NULL UNIQUE,
+  prodi VARCHAR(100),
+  tahun_masuk YEAR,
+  no_handphone VARCHAR(20),
+  alamat TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+4. (Opsional) Tabel log_aktivitas
+
+CREATE TABLE IF NOT EXISTS log_aktivitas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  aktivitas TEXT,
+  waktu TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+5. Data Awal (contoh user admin)
+
+INSERT INTO users (username, password, nama_lengkap, role)
+VALUES ('admin', SHA2('admin123', 256), 'Administrator', 'admin');
+
+Struktur Folder 
+
+/data_mahasiswa_app/
+│
+├── config.php
+├── login.php
+├── logout.php
+├── dashboard.php
+├── form_input.php
+├── edit.php
+├── hapus.php
+├── export_excel.php
+├── export_pdf.php
+├── tentang.php
+│
+├── /uploads/           # Folder untuk menyimpan foto mahasiswa
+├── /bootstrap/         # Bootstrap CSS/JS
+├── /css/               # CSS tambahan
+├── /js/                # JS tambahan
+├── /img/               # Logo/icon
+├── navbar.php
+└── footer.php
+
+
+
